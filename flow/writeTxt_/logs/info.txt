@@ -1,5 +1,5 @@
 src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
-219
+222
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
 	202402201117474823.pdf missing_cmaps: dvotsurekhmrbold, dvotsurekhmr
@@ -49,7 +49,7 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
 **** PIPEERROR IN 202402201117474823.pdf --> para 202402201117474823.pdf:Page_idx: 4 1 <-> [(0, 1), (0, 2)]
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
-	202402201500385723.pdf missing_cmaps: dvotsurekhmrbold, dvotsurekh, dvotsurekhmr, dvotsurekhbold
+	202402201500385723.pdf missing_cmaps: dvotsurekhbold, dvotsurekhmrbold, dvotsurekhmr, dvotsurekh
   exec_task: word_recognizer 
 	Tesseract on page: 2
 	Tesseract on page: 3
@@ -62,4 +62,60 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
   exec_task: line_finder 
   exec_task: para_finder 
 **** PIPEERROR IN 202402201500385723.pdf --> para 202402201500385723.pdf:Page_idx: 2 2 <-> [(0, 3)]
-#docs: 219 #processed: 2
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403111501490423.pdf missing_cmaps: dvotsurekhbold, dvotsurekhmrbold, dvotsurekhmr, dvotsurekh
+  exec_task: word_recognizer 
+  exec_task: pdftable_finder 
+	==Total:0 Errors=0 
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403111501490423.pdf: >शासन निर्णय क्रमांक< >स्मारक-२०२३/प्र.क्र.१८८/सां.का.३<
+	elapsed_time:202403111501490423.pdf: 0.000081
+  exec_task: doc_translator_hf 
+    Paras: #35 Sentences: #0
+	[0]  #words: 260 #sentences: 37
+	After generate: 3 MB
+	[1]  #words: 241 #sentences: 15
+	After generate: 3 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403111630134623.pdf missing_cmaps: timesnewromanpsboldmt, sakalmarathinormal, dvotsurekhmrbold, dvotsurekhmr, dvotsurekh, dvotsurekhbold
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+  exec_task: pdftable_finder 
+	==Total:4 Errors=4 TableEmptyBodyCellError=4
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	**FirstPage: 5: टिडीएस २०२३/११/प्र.क्र.४६४/पर्यटन ==शासन निर्णय क्रमांक : टिडीएस २०२३/११/प्र.क्र.४६४/पर्यटन,
+	extract_order_number:202403111630134623.pdf: >शासन निर्णय क्रमांक< >टिडीएस २०२३/११/प्र.क्र.४६४/पर्यटन<
+	elapsed_time:202403111630134623.pdf: 0.001043
+  exec_task: doc_translator_hf 
+    Paras: #9 Sentences: #2
+	[0]  #words: 21 #sentences: 2
+	After generate: 3 MB
+	[0]  #words: 157 #sentences: 12
+	After generate: 3 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403111837494423.pdf missing_cmaps: timesnewromanpsboldmt, sakalmarathinormal, dvotsurekhmrbold, dvotsurekhmr, dvotsurekh, dvotsurekhbold
+  exec_task: word_recognizer 
+  exec_task: pdftable_finder 
+	==Total:2 Errors=2 TableEmptyBodyCellError=2
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403111837494423.pdf: >शासन निर्णय क्रमांक< >टिडीएस २०२४/०३/प्र.क्र.७३/पर्यटन<
+	elapsed_time:202403111837494423.pdf: 0.000076
+  exec_task: doc_translator_hf 
+    Paras: #21 Sentences: #47
+	[0]  #words: 112 #sentences: 20
+	After generate: 3 MB
+	[0]  #words: 170 #sentences: 26
+	After generate: 3 MB
+  exec_task: text_writer 
+#docs: 222 #processed: 5
